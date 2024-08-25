@@ -1,0 +1,24 @@
+T-1
+srinjoy@srinjoy-HP-ubuntu:~$ source /opt/ros/noetic/setup.bash
+srinjoy@srinjoy-HP-ubuntu:~$ source ~/catkin_ws/devel/setup.bash
+srinjoy@srinjoy-HP-ubuntu:~$ roscore
+
+
+T-2
+srinjoy@srinjoy-HP-ubuntu:~/ardupilot/ArduCopter$ sim_vehicle.py -v ArduCopter -f gazebo-iris --console --map
+
+
+t-3
+srinjoy@srinjoy-HP-ubuntu:~$ roslaunch mavros apm.launch fcu_url:="udp://:14550@127.0.0.1:14551"
+
+t-4
+
+srinjoy@srinjoy-HP-ubuntu:/opt/ros/noetic/lib/teleop_twist_keyboard$ rosrun teleop_twist_keyboard teleop_twist_keyboard.py cmd_vel:=/mavros/setpoint_velocity/cmd_vel
+
+
+t-5
+
+srinjoy@srinjoy-HP-ubuntu:~/ardupilot_gazebo/worlds$ gazebo --verbose iris_arducopter_runway.world
+
+
+
