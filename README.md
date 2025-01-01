@@ -30,7 +30,6 @@ The primary goal of this project is to create a robust algorithm that enables dr
 - **Physics-Based Approach**: By grounding our solution in well-established physics principles, we ensure accuracy and reliability.
 - **Engaging Visualization**: The use of Turtle graphics in the AirSim simulation offers an intuitive and engaging way to see the drone's path corrections in action.
 
-
 ## Conclusion
 
 This project not only demonstrates the practical application of physics in drone navigation but also highlights the potential for drones to perform precise agricultural tasks, even in less-than-ideal conditions. We hope you find this project as exciting and informative as we do!
@@ -44,6 +43,8 @@ Thank you for checking out our project! If you have any questions or suggestions
 ---
 
 **Note**: This project is intended for educational and research purposes. Always ensure to comply with local regulations and safety guidelines when operating drones.
+
+---
 
 # Project Setup and Execution Guide
 
@@ -73,7 +74,6 @@ This document provides a step-by-step guide to setting up and running the projec
 1. **Open File Explorer** and navigate to `This PC`.
 2. **Open the pinned `iort` folder** in the recent bar.
 3. **Activate the Python environment** by opening a terminal in this folder and running:
-using `venv`:
     ```bash
     source path/to/your/venv/bin/activate
     ```
@@ -114,7 +114,6 @@ using `venv`:
 3. Verify the drone’s movement and wind compensation through the plotted path and logged positions.
 
 ### 7. Shutdown
-
 
 1. Shut down the PX4 SITL:
     ```bash
